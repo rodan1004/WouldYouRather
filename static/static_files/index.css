@@ -5,7 +5,7 @@ body{
 
 #main-header{
     /* margin: auto; */
-    width: 15%;
+    width: 100%;
     
 }
 
@@ -13,7 +13,23 @@ body{
     margin-left: 600px;
 } */
 
+#menu{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+}
 
+.list-menu{
+    color: white;
+    margin: 20px;
+    list-style-type: none;
+    background: rgb(1, 25, 39);
+    padding: 20px;
+    border-radius: 60px;
+}
+.list-menu:hover{
+    background:  rgb(15, 128, 24);
+}
 
 .content-query{
     color: white;
