@@ -23,11 +23,12 @@ const background_still = {
 // console.log(content_query_child)
 
 content_query_child[0].addEventListener('click', background_still.first_content);
+
 content_query_child[1].addEventListener('click', background_still.second_content);
 
 for(let list of list_menu_a){
         list.addEventListener('click', (e) => {
-                list_menu_a.style.background = 'rgb(15, 128, 24)'
+                list.style.background = 'rgb(15, 128, 24)';
         })  
 }
 

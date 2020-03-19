@@ -1,11 +1,13 @@
 body{
     background: rgb(21, 38, 49)
+    /* background: red */
 }
 
 
 #main-header{
     /* margin: auto; */
     width: 100%;
+    background: rebeccapurple;
     
 }
 
@@ -57,14 +59,14 @@ body{
     padding: 40px;
     margin: 6px;
     border: inherit 4px;
-    border-radius: 10px;
+    border-radius: 60px;
 }
 
 .content-query-img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 60px;
+    border-radius: 10px;
 }
 
 .content-query-text{
