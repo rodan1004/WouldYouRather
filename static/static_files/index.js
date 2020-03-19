@@ -28,7 +28,7 @@ content_query_child[1].addEventListener('click', background_still.second_content
 for(let list of list_menu_a){
         list.addEventListener('click', (e) => {
                 list_menu_a.style.background = 'rgb(15, 128, 24)'
-        })
+        })  
 }
 
 
