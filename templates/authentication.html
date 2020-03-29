@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Would you Rather</title>
+    <title>WYR: Auth</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'static_files/Index/mains.css' %}">
-    <link rel="stylesheet" href="{% static 'static_files/Auth/auths.css' %}">
+    <link rel="stylesheet" href="{% static 'static_files/Index/content.css'%}">
+    <link rel="stylesheet" href="{% static 'static_files/Auth/auth.css'%}">
 </head>
 <body>
     {% load static %}
     <header id="main-header">
         <img src="{% static 'static_files/imgs/wyr-70x70.png '%}" alt="wyr" id="main-logo" >
     </header>
-    
+    <header class="login-header"><strong>Login</strong></header>
     {% block content %}
     {% endblock %}
-   
+    
 </body>
-{% load static %}
-<script src="{% static 'static_files/Index/content.js' %}"></script>
 </html>

@@ -1,0 +1,36 @@
+.login-header{
+    color: rgb(15, 128, 24);
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 110px;
+}
+
+.authentication{
+    display: flex;
+    justify-content: center;
+    background: rgb(1, 25, 39);
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+.authentication-input{
+    padding: 20px;
+    margin: 30px;
+    width: 80%;
+    border-radius: 60px;
+
+}
+
+.auth-button{
+    background: rgb(15, 14, 14);
+    color: white;
+    border: none;
+    width: 30%;
+    
+    
+    
+}

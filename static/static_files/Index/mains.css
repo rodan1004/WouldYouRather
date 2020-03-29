@@ -6,18 +6,22 @@ body{
 
 #main-header{
     /* margin: auto; */
-    width: 100%;
-    background: rebeccapurple;
+    width: 50%;
+    float: left;
+    margin-bottom: 150px;
+
+    
+    
     
 }
+
 
 /* #main-header img{
     margin-left: 600px;
 } */
 
 #menu{
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex; */
     margin: auto;
 }
 
@@ -26,8 +30,9 @@ body{
 .list-menu{
     
     margin: 20px;
+    float: left;
     list-style-type: none;
-    
+    position: relative;
     
 }
 
@@ -42,6 +47,24 @@ body{
 
 .list-menu a:hover{
     background:  rgb(15, 128, 24);
+}
+
+.dropdown{
+    background: rgb(1, 25, 39);
+    color: white;
+    list-style: none;
+    margin-top: 19px;
+    border-radius: 20px; 
+    position: absolute;
+    visibility: hidden;
+}
+
+.dropdown-list{
+    padding: 10px;
+}
+
+.dropdown-list:hover{
+    background: rgb(15, 128, 24);
 }
 
 .content-query{
@@ -86,3 +109,5 @@ body{
     margin-top: 30px;
 
 }
+
+
