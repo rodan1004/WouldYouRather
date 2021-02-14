@@ -1,50 +1,36 @@
-{% extends 'base.html' %}
-
-{% block content %}
-        
-            <div id="main-header">
-                    <ul id="menu">
-                        <li class="list-menu"><a class="list-menu-a">Popular</a></li>
-                        <li class="list-menu category-menu">
-                            <a class="list-menu-a">Category</a>
-                            <ul class="dropdown">
-                                {% comment %} {% for group in categories  %} {% endcomment %}
-                                    <li class="dropdown-list"> Category </li>
-                                    <li class="dropdown-list"> Category </li>
-                                    <li class="dropdown-list"> Category </li>
-                                    <li class="dropdown-list"> Category </li>
-                                    <li class="dropdown-list"> Category </li>
-                                    <li class="dropdown-list"> Category </li>
-                                {% comment %} {% endfor %} {% endcomment %}
-                            </ul>
-                        </li>
-                        <li class="list-menu"><a class="list-menu-a">History</a></li>
-                        <li class="list-menu"><a class="list-menu-a" href="http://127.0.0.1:8000/auth/">Login</a></li>
-                        <li class="list-menu"><a class="list-menu-a">Create Question</a></li>
-                    </ul>
-            </div>
-        
-    {% for querie in queries %}
+{% extends 'base.html' %} 
+{% block content %} 
 
 
-        <div class="content-query">
-            <div class="content-query-child">
-                <img src="{{ querie.Qimg1.url }}" alt="random_img" class="content-query-img" width="250" height="200">
-                {% comment %} <div>{{ querie.Qimg1 }}</div> {% endcomment %}
-                <p class="content-query-text">{{ querie.Q1 }}</p>
-            </div>
-            <div class="content-query-child">
-                
-                <img src="{{ querie.Qimg2.url  }}" alt="random_img" class="content-query-img" width="250" height="200">
-                {% comment %} <div>{{ querie.Qimg2 }}</div> {% endcomment %}
-                <p class="content-query-text">{{ querie.Q2 }}</p>
-            
-            </div>
-            <div>
-                <button type="submit" id="btn-submit" >submit</button>
-            </div>
+{% for querie in queries %}
+
+<a href="#">
+      <div class="left"></div> 
+</a>
+
+<div class="grid">
+
+    <div class="card card__three">
+        <figure class="card__img">
+            <img src="{{ querie.Qimg1.url }}" width="340" height="280" />
+        </figure>
+        <div class="card__desc">
+            <h1>{{ querie.Q1 }}</h1>
         </div>
-    
-    {% endfor %}
-{% endblock %}
+    </div>
+    <div class="card card__three">
+        <figure class="card__img">
+            <img src="{{ querie.Qimg2.url  }}" width="340" height="280" />
+        </figure>
+        <div class="card__desc">
+            <h1>{{ querie.Q2 }}</h1>
+        </div>
+    </div>
+</div>
 
+<a href="#">
+    <div class="right"></div> 
+</a>
+
+{% endfor %} 
+{% endblock %}

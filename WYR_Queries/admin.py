@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Queries, Categories
+from .models import Queries
 # Register your models here.
 
 admin.site.register(Queries)
-admin.site.register(Categories)

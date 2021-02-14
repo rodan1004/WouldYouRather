@@ -22,6 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'm_u!_andk-#*u)i!uhza41n0y#ya@nhc9syo%9%)ckeehqp3$='
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -38,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'WYR_Queries.apps.WyrQueriesConfig',
-    'User.apps.UserConfig',
+    'WYR_Users.apps.WyrUsersConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -85,7 +87,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

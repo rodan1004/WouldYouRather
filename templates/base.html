@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Would you Rather</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Would you Rather</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'static_files/Index/content.css' %}">
+        <link rel="stylesheet" href="{% static 'static_files/Auth/auths.css' %}">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+    </head>
+
+    <body>
+        {% load static %}
+        <div class="luxbar luxbar-static">
+        <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
+            <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+                <ul class="luxbar-navigation">
+                    <li class="luxbar-header">
+                        <a class="luxbar-brand" href="http://127.0.0.1:8000/"><img src="{% static 'static_files/imgs/wyr-70x70.png' %}" alt="wyr"
+                            id="main-logo"></a>
+                        <label class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
+                    </li>
+                    <li class="luxbar-item active"><a href="http://127.0.0.1:8000/auth/">Login</a></li>
+                    <li class="luxbar-item"><a href="http://127.0.0.1:8000/auth/register">Sign up</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'static_files/Index/mains.css' %}">
-    <link rel="stylesheet" href="{% static 'static_files/Auth/auths.css' %}">
-</head>
-<body>
-    {% load static %}
-    <header id="main-header">
-        <img src="{% static 'static_files/imgs/wyr-70x70.png '%}" alt="wyr" id="main-logo" >
-    </header>
-    
-    {% block content %}
-    {% endblock %}
-   
-</body>
-{% load static %}
-<script src="{% static 'static_files/Index/content.js' %}"></script>
+    <script src="{% static 'static_files/Index/content.js' %}"></script>
+    <script src="{% static 'static_files/Index/arrows.js' %}"></script>
+
+    <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
 </html>

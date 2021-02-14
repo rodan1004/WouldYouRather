@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% comment %} <header class="login-header"><strong>Login</strong></header>
+    <div class="authentication" >
+        <form action="" method="GET">
+            <input class="authentication-input" name="username" type="text" placeholder="Username">
+            <input class="authentication-input" name="password" type="password" placeholder="Password">
+            <input class="authentication-input auth-button" type="submit" value="Submit">
+        </form>
+        <a class="sign-up-click" href="http://127.0.0.1:8000/auth/register">Don't have an account? Sign Up</a>
+    </div> {% endcomment %}
+    {% load static %}
+     <form class="login" method="POST" action="">
+            {% csrf_token %}
+            <div class="login-screen">
+                <div class="app-title">
+                    <a href="#"> <img src="{% static 'static_files/imgs/wyr-70x70.png' %}" alt="wyr" id="main-logo" ></a>
+                    <p>Login</p>
+                </div>
+    
+                <div class="login-form">
+                    <div class="control-group">
+                    <input type="text" class="login-field" name="username" type="text" placeholder="username" id="login-name">
+                    <label class="login-field-icon fui-user" for="login-name"></label>
+                    </div>
+    
+                    <div class="control-group">
+                    <input type="password" class="login-field" name="password" type="password" placeholder="password" id="login-pass">
+                    <label class="login-field-icon fui-lock" for="login-pass"></label>
+                    </div>
+    
+                    <input type="submit" value="submit" class="btn btn-primary btn-large btn-block">login</input>
+                    <a class="login-link" href="http://127.0.0.1:8000/auth/register">Not a member yet?Create your account</a>
+                </div>
+            </div>
+        </form>
+{% endblock %}

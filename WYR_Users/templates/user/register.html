@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <header class="login-header"><strong>Register</strong></header>
+    <div class="authentication">
+        <form action="" method="POST">{% csrf_token %}
+            {{ userForm.as_p }}
+            <input class="authentication-input auth-button" type="Submit" value="Submit"> 
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,138 @@
+/* this is the body of the main html page */
+
+
+/* body {
+    background: rgb(21, 38, 49);
+} */
+
+
+/* this is the header above the form of the login/register page which contains the login/register title */
+
+
+/* .login-header{
+    color: rgb(15, 128, 24);
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 110px;
+}
+
+.authentication{
+    display: flex;
+    justify-content: center;
+    background: rgb(1, 25, 39);
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+    color: white;
+}
+
+.authentication-input{
+    padding: 20px;
+    margin: 30px;
+    width: 100%;
+    border-radius: 60px;
+
+}
+
+.auth-button{
+    background: rgb(15, 14, 14);
+    color: white;
+    border: none;
+    width: 30%;
+    
+    
+    
+}
+
+.sign-up-click{
+    margin-top: 277px;
+    margin-right: 40px;
+    text-decoration: white;
+    color: white;
+    width: 20%;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: Arial;
+    background-color: #dac7b8;
+    padding: 50px;
+}
+
+.login {
+    margin: 120px auto;
+    width: 400px;
+}
+
+.login-screen {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px
+}
+
+.app-title {
+    text-align: center;
+    color: #777;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.control-group {
+    margin-bottom: 10px;
+}
+
+input {
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+    transition: border .5s;
+}
+
+input:focus {
+    border: 2px solid #3498DB;
+    box-shadow: none;
+}
+
+.btn {
+    border: 2px solid transparent;
+    background: #0ab953;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background-color: #2980B9;
+}
+
+.login-link {
+    font-size: 12px;
+    color: #444;
+    display: block;
+    margin-top: 12px;
+}
