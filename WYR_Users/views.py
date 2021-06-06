@@ -2,8 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import UserForm
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
-from WYR_Queries.views import index, home
-
+from django.contrib import messages
 
 def user(request):
     if request.method == 'POST':
@@ -14,8 +13,14 @@ def user(request):
         
         if user is not None:
             login(request, user)
-            redirect('home')
+            return redirect('userIndex')
+        else:
+            messages.info(request, 'username or password wrong!')
     return render(request, 'user/user.html')
+
+def logoutUser(request):
+    logout(request)
+    return redirect('user')
 
 def register(request):
     # if request.method == 'POST':
@@ -40,6 +45,4 @@ def register(request):
     context = {'userForm': userForm}
     return render(request, 'user/register.html', context)
 
-def user_Interface(request):
-    return render(request, 'Interface/user_Interface.html')
     

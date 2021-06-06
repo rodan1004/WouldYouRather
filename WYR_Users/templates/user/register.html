@@ -1,11 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <header class="login-header"><strong>Register</strong></header>
+{% load static %}
     <div class="authentication">
         <form action="" method="POST">{% csrf_token %}
-            {{ userForm.as_p }}
-            <input class="authentication-input auth-button" type="Submit" value="Submit"> 
+        <div class="authentication-screen">
+            <div class="app-title">
+                <a href="#"> <img src="{% static 'static_files/imgs/wyr-70x70.png' %}" alt="wyr" id="main-logo" ></a>
+                <header class="login-header"><strong>Register</strong></header>
+            </div>
+            <div class="authentication-form">
+                {{ userForm.as_p }}
+                <input class="btn btn-primary btn-large btn-block" type="Submit" value="Submit">
+            </div>
+        </div>
         </form>
     </div>
 

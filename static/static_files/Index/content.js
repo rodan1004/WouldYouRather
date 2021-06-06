@@ -8,10 +8,6 @@ const category_menu = document.querySelector('.category-menu');
 
 const start = document.querySelector('.start');
 
-start.addEventListener('click', () => {
-    window.location = 'http://127.0.0.1:8000/Time or Money'
-});
-
 const background_still = {
         first_content(index) {
             content_query_child[index].style.background = 'rgb(15, 128, 24)';

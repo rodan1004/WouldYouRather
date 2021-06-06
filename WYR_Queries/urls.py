@@ -1,8 +1,11 @@
 from django.urls import path
+from .views import pageIndex
 from . import views
 
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('querycreator', views.querycreator, name='querycreator'),
-    path('<query_title>', views.index, name='index'),
+    path('', pageIndex.index, name='index'),
+    path('userIndex/', pageIndex.userIndex, name='userIndex'),
+    path('api/', views.api, name='api'),
+    path('CreateQueries/', views.CreateQueries, name='CreateQueries'),
+    
 ]

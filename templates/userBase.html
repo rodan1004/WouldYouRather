@@ -23,8 +23,9 @@
                             id="main-logo"></a>
                         <label class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
                     </li>
-                    <li class="luxbar-item active"><a href="http://127.0.0.1:8000/auth/">Login</a></li>
-                    <li class="luxbar-item"><a href="http://127.0.0.1:8000/auth/register">Sign up</a></li>
+                    <li class="luxbar-item active">hello, {{request.user}}</li>
+                    <li class="luxbar-item active"><a href="{% url 'CreateQueries' %}">Create</a></li>
+                    <li class="luxbar-item"><a href="{% url 'logout' %}">logout</a></li>
                     </li>
                 </ul>
             </div>
@@ -38,7 +39,7 @@
     <script src="{% static 'static_files/Index/content.js' %}"></script>
     <script src="{% static 'static_files/Index/arrows.js' %}"></script>
 
-    <!-- <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script> -->
+    <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script><script  src="./script.js"></script>
 
 </html>

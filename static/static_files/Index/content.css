@@ -1,7 +1,7 @@
 .body {
     font-family: Arial;
     background-color: #dac7b8;
-    padding: 50px;
+    padding: 200px;
     display: flex;
     align-items: center;
     min-height: 100vh;
@@ -21,15 +21,18 @@
     width: 50px;
     height: 50px;
     transition: .5s;
-    float: left;
     box-shadow: -2px 2px 0 black;
+    float: left;
+    position: absolute;
 }
 
 .left {
+    left: 0;
     transform: rotate(45deg);
 }
 
 .right {
+    right: 0;
     transform: rotate(-135deg);
 }
 
@@ -95,6 +98,7 @@
     justify-content: center;
     max-width: 200px;
     margin: 0 auto;
+    margin-top: 100px
 }
 
 @media screen and (min-width: 768px) {
@@ -105,7 +109,7 @@
 
 .card {
     position: relative;
-    flex: 1 1 100%;
+    /* flex: 1 ; */
     margin: 10px 0;
     padding: 20px;
     background: white;
@@ -123,7 +127,7 @@
 }
 
 .card__img {
-    margin: -20px -20px 0;
+    margin: -20px -20px;
 }
 
 .card__img img {
@@ -165,4 +169,8 @@
 .card__three:focus::before,
 .card__three:focus::after {
     transform: scale3d(1, 1, 1);
+}
+
+.create-input{
+    margin: 20px;
 }

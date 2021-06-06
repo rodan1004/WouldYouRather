@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\rodan\\.virtualenvs\\WouldYouRather-cfqtSwRs\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\rodan\\.virtualenvs\\WouldYouRather-cfqtSwRs\\Scripts\\python.exe",
+    "python.linting.pylintEnabled": true
 }
